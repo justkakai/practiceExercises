@@ -1,15 +1,7 @@
 let attempts = 0;
-let randomNum = 0;
 let exit = false;
 
-function randomizedNumber() {
-    let numbersArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-    let randomIndex = Math.floor(Math.random() * numbersArray.length); 
-    randomNum = numbersArray[randomIndex]
-    return randomNum;
-}
-
-randomizedNumber();
+let randomNum = Math.ceil(Math.random() * 10);
 window.alert(randomNum);
 
 let guessedNumber = window.prompt(`Guess a number between 1-10`);
